@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomEditTex">
+        <item name="titleSize">14sp</item>
+        <item name="titleColor">@color/color_btn_scanning</item>
+        <item name="titleBackgroundColor">@color/color_main_bg</item>
+        <item name="titlePaddingStart">8dp</item>
+        <item name="titlePaddingEnd">8dp</item>
+        <item name="textSize">20sp</item>
+        <item name="textColor">@color/color_btn_scanning</item>
+
+        <item name="textStartPadding">16dp</item>
+        <item name="textTopPadding">8dp</item>
+        <item name="textBottomPadding">8dp</item>
+
+
+        <item name="borderWidth">1dp</item>
+        <item name="borderRadius">8dp</item>
+        <item name="borderColor">@color/color_btn_scanning</item>
+    </style>
+
+    <style name="CountButtonStyle" parent="CardView">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">5dp</item>
+
+    </style>
+
+</resources>

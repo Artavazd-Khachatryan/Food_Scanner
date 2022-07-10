@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="holder"
+            type="com.useruser.foodscanner.adapters.ProductListAdapter.ProductViewHolder"/>
+
+
+        <variable
+            name="product"
+            type="com.useruser.foodscanner.data.models.ProductModel" />
+
+    </data>
+
+    <com.daimajia.swipe.SwipeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/swipeLayout">
+
+
+        <FrameLayout
+            android:id="@+id/flDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_delete_bg"
+            android:onClick="@{holder::deleteClick}"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="63dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="54dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_delete" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/flSwipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="@{product.name}"
+                android:textSize="16sp"
+                android:textColor="@color/color_btn_scanning"
+                tools:text="Product name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginBottom="20dp"
+                android:text="@{(product.count == 0)? product.price  + ` ` + product.priceType: product.count + `x` + product.price  + ' ' + product.priceType}"
+                android:textSize="16sp"
+                android:textColor="@color/color_btn_scanning"
+                tools:text="Product price and count" />
+
+        </FrameLayout>
+
+    </com.daimajia.swipe.SwipeLayout>
+
+</layout>

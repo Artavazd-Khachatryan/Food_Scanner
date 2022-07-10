@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#E5E5E5</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="color_add_qr_btn">#FEAF00</color>
+    <color name="color_btn_scanning">#6D011A</color>
+    <color name="color_main_bg">#E5E5E5</color>
+    <color name="color_price">#03A500</color>
+    <color name="color_price_layout_bg">#E5E5E5</color>
+    <color name="color_count_layout_bg">#C4C4C4</color>
+    <color name="color_delete_bg">#D20101</color>
+</resources>
